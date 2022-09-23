@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+:root {
+  --sliderpercentage: 0%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -125,8 +128,13 @@ body {
 .rangeinput {
   width: 80%;
   background-color: transparent;
+  -webkit-appearance: none;
 }
+
+
+
 .rangeinput::-moz-range-thumb {
+  -webkit-appearance: none;
   background-color: crimson;
   height: 30px;
   width: 30px;
@@ -145,9 +153,52 @@ body {
   background-image: linear-gradient(crimson, crimson);
   /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!
   add variable for size % and then update all easy*/
-  background-size: 20% 100%;
+  background-size: var(--sliderpercentage) 100%;
   background-repeat: no-repeat;
 }
+
+
+
+.rangeinput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+.rangeinput::-webkit--slider-track {
+  background-color: rgba(128, 128, 128, 0.438);
+  height: 10px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(crimson, crimson);
+  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!
+  add variable for size % and then update all easy*/
+  background-size: var(--sliderpercentage) 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .checks {
   display: flex;
   flex-direction: column;

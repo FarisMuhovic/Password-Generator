@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="design.css">
   </head>
   <body>
-    <script src="script.js" async defer></script>
-    
+      <script src="script.js" async defer></script>
+      <p id="tool">Password Generator Tool</p>
+      <div class="headcontent">
+        <h1>Generate a secure password</h1>
+        <p>Use our online password generator to instantly create a secure, random password.</p>
+        <input type="text" id="passwordOutput" readonly>
+      <button id="generatebtn">GENERATE</button>
+      </div>
+      <div class="settings">
+        <p class="settingsp"s>Settings</p>
+        <div class="passwordlength">
+          <p>Password Length</p>
+          <label>
+            <input type="number" id="inputnumbers" min="10" max="50" value="10">
+            <input type="range" max="50" min="10" value="10" id="rangeinput" class="rangeinput">
+          </label>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" checked class="checkboxes">Uppercase</label>
+          <label><input type="checkbox" checked class="checkboxes">Lowercase</label>
+          <label><input type="checkbox" checked class="checkboxes">Numbers</label>
+          <label><input type="checkbox" checked class="checkboxes">Symbols</label>
+        </div>
+      </div>
   </body>
 </html>

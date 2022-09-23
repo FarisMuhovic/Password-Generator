@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  gap: 25px;
+  padding: 15px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.headcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 5px;
+  padding: 15px;
+}
+.headcontent h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+}
+#tool {
+  color: crimson;
+}
+.headcontent p {
+  font-size: 18px;
+  text-align: center;
+}
+#passwordOutput {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 150%;
+  text-align: center;
+  border: none;
+}
+#passwordOutput:focus {
+  outline: none;
+}
+#generatebtn {
+  width: 20%;
+  min-width: 105px;
+  height: 30px;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+#generatebtn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+#generatebtn:active {
+  scale: 1.1;
+}
+.settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  box-shadow: 0px 0px 5px gray;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  padding: 15px;
+}
+.settingsp {
+  align-self: flex-start;
+  position: relative;
+  width: 100%;
+  grid-column: 1 / -1;
+  height: 50%;
+}
+.settingsp::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  box-shadow: 0px 0px 5px gray;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.passwordlength {
+  display: grid;
+  align-items: center;
+}
+.passwordlength p {
+  grid-column: 1 / -1;
+  padding: 10px 0;
+}
+.passwordlength label {
+  display: flex;
+  gap: 15px;
+}
+#inputnumbers {
+  width: 60px;
+  text-align: center;
+  height: 30px;
+  border-radius: 5px;
+  background-color: crimson;
+  border:none;
+  color: white;
+  padding: 5px;
+}
+.rangeinput {
+  width: 80%;
+  background-color: transparent;
+}
+.rangeinput::-moz-range-thumb {
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+.rangeinput::-moz-range-track {
+  background-color: rgba(128, 128, 128, 0.438);
+  height: 10px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(crimson, crimson);
+  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!
+  add variable for size % and then update all easy*/
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+}
+.checks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  gap: 10px;
+}
+
+.checks label {
+  display: flex;
+  gap: 10px;
+}
+/* update the checkbox and style it with crimson red*/
+
+
+
+
+@media (max-width:650px) {
+  body {
+    width: 100%;
+  }
+}

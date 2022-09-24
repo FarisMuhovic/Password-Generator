@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Password Generator</title>
+    <title>Password Generator Tool</title>
     <meta name="description" content="Generate a random password.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/30ad65b7cf.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <script src="script.js" async defer></script>
@@ -21,17 +23,32 @@
         <p class="settingsp"s>Settings</p>
         <div class="passwordlength">
           <p>Password Length</p>
-          <label>
             <input type="number" id="inputnumbers" min="10" max="50" value="10">
             <input type="range" max="50" min="10" value="10" id="rangeinput" class="rangeinput">
-          </label>
         </div>
-        <div class="checks">
-          <label><input type="checkbox" checked class="checkboxes">Uppercase</label>
+        <ul class="checks">
+          <li>
+            <input type="checkbox" checked class="checkboxes" id="upper">
+            <label for="upper">Uppercase</label>
+          </li>
+          <li>
+            <input type="checkbox" checked class="checkboxes" id="lower">
+            <label for="lower">Lowercase</label>
+          </li>
+          <li>
+            <input type="checkbox" checked class="checkboxes" id="number">
+            <label for="number">Numbers</label>
+          </li>
+          <li>
+            <input type="checkbox" checked class="checkboxes" id="symbol">
+            <label for="symbol">Symbols</label>
+          </li>
+          <!--
           <label><input type="checkbox" checked class="checkboxes">Lowercase</label>
           <label><input type="checkbox" checked class="checkboxes">Numbers</label>
           <label><input type="checkbox" checked class="checkboxes">Symbols</label>
-        </div>
+          -->
+        </ul>
       </div>
   </body>
 </html>

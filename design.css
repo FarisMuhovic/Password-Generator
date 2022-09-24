@@ -1,35 +1,33 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
 :root {
   --sliderpercentage: 0%;
 }
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Libre Franklin', sans-serif;
+  list-style: none;
 }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: rgb(34, 34, 34);
   color: white;
   gap: 25px;
@@ -38,42 +36,47 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50% , -50%);
-      -ms-transform: translate(-50% , -50%);
-          transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .headcontent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   -webkit-box-shadow: 0px 0px 5px gray;
-          box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px gray;
   border-radius: 5px;
   padding: 15px;
 }
+
 .headcontent h1 {
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
 }
+
 #tool {
   color: crimson;
 }
+
 .headcontent p {
   font-size: 18px;
   text-align: center;
 }
+
 #passwordOutput {
   width: 100%;
   height: 40px;
@@ -83,9 +86,11 @@ body {
   text-align: center;
   border: none;
 }
+
 #passwordOutput:focus {
   outline: none;
 }
+
 #generatebtn {
   width: 20%;
   min-width: 105px;
@@ -99,6 +104,7 @@ body {
   transition: 0.3s;
   border: 2px solid transparent;
 }
+
 #generatebtn:hover {
   background-color: white;
   color: black;
@@ -106,23 +112,35 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 #generatebtn:active {
   scale: 1.1;
 }
+
 .settings {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  -ms-grid-rows: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
   -webkit-box-shadow: 0px 0px 5px gray;
-          box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px gray;
   width: 100%;
   border-radius: 5px;
   position: relative;
   padding: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
+
 .settingsp {
   align-self: flex-start;
   position: relative;
@@ -130,44 +148,47 @@ body {
   grid-column: 1 / -1;
   height: 50%;
 }
+
 .settingsp::before {
   content: "";
   width: 100%;
   height: 1px;
   background-color: gray;
   -webkit-box-shadow: 0px 0px 5px gray;
-          box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 5px gray;
   position: absolute;
   bottom: -2px;
   left: 0;
 }
+
 .passwordlength {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.passwordlength p {
-  grid-column: 1 / -1;
-  padding: 10px 0;
-}
-.passwordlength label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
+
 #inputnumbers {
   width: 60px;
   text-align: center;
   height: 30px;
   border-radius: 5px;
   background-color: crimson;
-  border:none;
+  border: none;
   color: white;
   padding: 5px;
 }
+
 .rangeinput {
   width: 80%;
   background-color: transparent;
@@ -185,6 +206,7 @@ body {
   border: none;
   outline: none;
 }
+
 .rangeinput::-moz-range-track {
   background-color: rgba(128, 128, 128, 0.438);
   height: 10px;
@@ -194,13 +216,10 @@ body {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   background-image: linear-gradient(crimson, crimson);
-  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!
-  add variable for size % and then update all easy*/
+  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!*/
   background-size: var(--sliderpercentage) 100%;
   background-repeat: no-repeat;
 }
-
-
 
 .rangeinput::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -211,7 +230,8 @@ body {
   border: none;
   outline: none;
 }
-.rangeinput::-webkit--slider-track {
+
+.rangeinput::-webkit-slider-runnable-track {
   background-color: rgba(128, 128, 128, 0.438);
   height: 10px;
   border-radius: 4px;
@@ -221,56 +241,113 @@ body {
   border-radius: 5px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(crimson), to(crimson));
   background-image: linear-gradient(crimson, crimson);
-  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!
-  add variable for size % and then update all easy*/
+  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!*/
   background-size: var(--sliderpercentage) 100%;
   background-repeat: no-repeat;
 }
 
+.rangeinput::-ms-thumb {
+  -webkit-appearance: none;
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rangeinput::-ms-track {
+  background-color: rgba(128, 128, 128, 0.438);
+  height: 10px;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(crimson, crimson);
+  /* UPDATE BACKGROUND SIZE WITH JAVASCRIPT !!!!*/
+  background-size: var(--sliderpercentage) 100%;
+  background-repeat: no-repeat;
+}
 
 .checks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  padding-top: 25px;
+}
+.checks li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 40%;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+input[type="checkbox"]{
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(128, 128, 128);
+  border-radius: 3px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0px 50px;
-  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
-
-.checks label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+.checks li label {
+  cursor: pointer;
 }
-/* update the checkbox and style it with crimson red*/
-
-
-
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  display: none;
+}
+input[type="checkbox"]:hover{
+  background-color: #a5a5a5;
+}
+input[type="checkbox"]:checked{
+  background-color: crimson;
+}
+input[type="checkbox"]:checked:after{
+  display: block;
+}
 
 @media (max-width:650px) {
   body {
     width: 100%;
+  }
+}
+
+@media (max-width:350px) {
+  .settings {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .checks {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

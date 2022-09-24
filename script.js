@@ -27,6 +27,7 @@ const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_><+=-";
 //new variable
+const passwordOutput = document.getElementById("passwordOutput");
 const generateBtn = document.getElementById("generatebtn");
 generateBtn.addEventListener("click", function () {
   let lengthOfPassword = rangeInput.value;
@@ -48,11 +49,34 @@ generateBtn.addEventListener("click", function () {
   if (symbolCheckbox === true) {
     mix += symbols;
   }
+  if (
+    (upperCheckbox === false) &
+    (lowerCheckbox === false) &
+    (numberCheckbox === false) &
+    (symbolCheckbox === false)
+  ) {
+    alert("Please Select Properties");
+  }
   let i = 0;
   while (i < lengthOfPassword) {
     i++;
     let randomNum = Math.floor(Math.random() * mix.length);
     password += mix[randomNum];
   }
-  document.getElementById("passwordOutput").value = password;
+
+  passwordOutput.value = password;
+});
+// copy password function
+const copyAsset = document.getElementById("copy");
+const copyPopUp = document.getElementById("copiedtext");
+copyAsset.addEventListener("click", function () {
+  let password = passwordOutput.value;
+  copyPopUp.style.opacity = 1;
+  navigator.clipboard.writeText(password);
+  if (copyPopUp.style.opacity == "1") {
+    console.log("111", copyPopUp.style.opacity);
+    setInterval(() => {
+      copyPopUp.style.opacity = 0;
+    }, 2500);
+  }
 });

@@ -89,6 +89,26 @@ body {
   font-size: 25px;
   right: 0px;
   padding: 10px;
+  cursor: pointer;
+}
+#copiedtext {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 65px;
+  background-color: crimson;
+  border-radius: 3px;
+  font-size: 15px;
+  opacity: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 #passwordOutput {
   width: 100%;

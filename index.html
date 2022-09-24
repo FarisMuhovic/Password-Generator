@@ -18,6 +18,7 @@
         <p>Use our online password generator to instantly create a secure, random password.</p>
         <div class="passgen">
           <input type="text" id="passwordOutput" readonly><i id="copy" class="fa-solid fa-copy"></i>
+          <p id="copiedtext">Copied!</p>
         </div>
         <button id="generatebtn">GENERATE</button>
       </div>
@@ -30,19 +31,19 @@
         </div>
         <ul class="checks">
           <li>
-            <input type="checkbox"  required class="checkboxes" id="upper">
+            <input type="checkbox" checked class="checkboxes" id="upper">
             <label for="upper">Uppercase</label>
           </li>
           <li>
-            <input type="checkbox"  required class="checkboxes" id="lower">
+            <input type="checkbox" checked class="checkboxes" id="lower">
             <label for="lower">Lowercase</label>
           </li>
           <li>
-            <input type="checkbox"  required class="checkboxes" id="number">
+            <input type="checkbox" checked class="checkboxes" id="number">
             <label for="number">Numbers</label>
           </li>
           <li>
-            <input type="checkbox"  required class="checkboxes" id="symbol">
+            <input type="checkbox" checked class="checkboxes" id="symbol">
             <label for="symbol">Symbols</label>
           </li>
           <!--

@@ -76,11 +76,25 @@ body {
   font-size: 18px;
   text-align: center;
 }
-
+.passgen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.passgen i {
+  position: absolute;
+  color: crimson;
+  font-size: 25px;
+  right: 0px;
+  padding: 10px;
+}
 #passwordOutput {
   width: 100%;
   height: 40px;
   padding: 10px;
+  padding-right: 50px;
   border-radius: 5px;
   font-size: 150%;
   text-align: center;
@@ -276,6 +290,7 @@ body {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   padding-top: 25px;
+  padding-right: 50px;
 }
 .checks li {
   display: -webkit-box;

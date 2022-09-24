@@ -16,8 +16,10 @@
       <div class="headcontent">
         <h1>Generate a secure password</h1>
         <p>Use our online password generator to instantly create a secure, random password.</p>
-        <input type="text" id="passwordOutput" readonly>
-      <button id="generatebtn">GENERATE</button>
+        <div class="passgen">
+          <input type="text" id="passwordOutput" readonly><i id="copy" class="fa-solid fa-copy"></i>
+        </div>
+        <button id="generatebtn">GENERATE</button>
       </div>
       <div class="settings">
         <p class="settingsp"s>Settings</p>
@@ -28,19 +30,19 @@
         </div>
         <ul class="checks">
           <li>
-            <input type="checkbox" checked class="checkboxes" id="upper">
+            <input type="checkbox"  required class="checkboxes" id="upper">
             <label for="upper">Uppercase</label>
           </li>
           <li>
-            <input type="checkbox" checked class="checkboxes" id="lower">
+            <input type="checkbox"  required class="checkboxes" id="lower">
             <label for="lower">Lowercase</label>
           </li>
           <li>
-            <input type="checkbox" checked class="checkboxes" id="number">
+            <input type="checkbox"  required class="checkboxes" id="number">
             <label for="number">Numbers</label>
           </li>
           <li>
-            <input type="checkbox" checked class="checkboxes" id="symbol">
+            <input type="checkbox"  required class="checkboxes" id="symbol">
             <label for="symbol">Symbols</label>
           </li>
           <!--

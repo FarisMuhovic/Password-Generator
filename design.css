@@ -231,7 +231,7 @@ body {
 }
 
 .rangeinput {
-  width: 80%;
+  width: 100%;
   background-color: transparent;
   -webkit-appearance: none;
 }
@@ -337,8 +337,8 @@ input[type="checkbox"]{
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
   background-color: rgba(128, 128, 128);
   border-radius: 3px;
   cursor: pointer;
